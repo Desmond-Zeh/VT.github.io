@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- My third html page-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="author" content="Desmond Zeh">
+<meta name="description"
+	content="This program is all about sizing instrument transformers for metering systems. It does not covers all the auxiliaries needed for a proper sizing of current transformers for a metering system, but it gives insights on the most necessary points to be considered when selecting these transformers.">
+<title>
+	Instrument transformers
+</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&family=Lisu+Bosa:ital@1&family=Old+Standard+TT:ital@1&display=swap"
+	rel="stylesheet">
+<link href="style.css" 
+	rel="stylesheet" >
+</head>
+<body>
+<header>
+	<h1>
+	<strong>Energy metering system</strong>
+</h1>
+</header>
+<!--My main navigation items-->
+	<nav>
+		<ul>
+			<li id="home"><a href="#">Home</a></li>
+                         <li><a href="#">Downloads</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Project</a></li>
+			<li id="myDoc"><a href="#">Documents</a></li>
+		</ul>
+	<form>
+		<input type="search" name='q' placeholder="search query">
+		<input type="submit" value="Valid">
+	</form>
+	</nav>
+	<!--This is my main program-->
+	<main>
+		<article>
+<h2><div style="text-align:center" >
+	<strong>B. VOLTAGE TRANSFORMER: </strong></div>
+</h2>
+<p>
+<spam style="color:dark blue">
+	<strong>Introduction</strong>
+</spam></br>
+Potential transformers are designed to scale down larger values of voltage to smaller values that can be easily measured by meters or manipulated by relays. A potential transformer is a voltage step down, current step up transformer. Thus, under normal operation, the voltage accros the secondary terminals of the transformer is small while the current is very small leading to a small VA of range 50 – to – 200. Under fault conditions for example short circuit of secondary terminals, the current is extremly high due to a negligible voltage. For this reason, the output terminals of a potential transformer should never be shortcircuited. Whether protection or measurement potential transformer, they  both scale down voltage levels.</br>
+<ol>
+<li><spam style="color:blue">
+	<strong>Measurement Voltage transformer</strong>
+</spam></li>
+A potential transformer for measurement is used to step-down voltages of higher magnetudes ( e.g 11kV) to smaller magnetudes (e.g 100V- to- 110V) for measurement by the energy meter. There are usually designed with accuracy classes of 0.2,0.5 with a burden of 30VA and above.</br>
+Similarily to a current transformer for measurement, potential transformer for measurement also have cores that easily get saturated under fault conditions. Thus if for any reason a measurement potential transformer is used for protection, under fault conditions, the core of the transformer will be saturated leading to a distorted output voltage with which the relay for protection might not operate as a result jeopardising the stability of the power system.</br>
+<li><spam style="color:blue">
+	<strong>Protection Voltage transformer</strong>
+</spam></li>
+Potential protection transformers on the otherhand have cores that do not easily get saturated even under fault conditions. There are often rated in the form P50 or 3P50 which means that a potential protection transformer is capable of maintaining an accuracy of ±1% or ±3%, when the voltage accross its primary winding is 50 times its rated value. Energy meters (e.g Itron SL7000) are designed to handle voltages of up to 480V between phases. Thus if this transformer is used for measurement, with such accuracy (1,3), the readings of the energy meter will not be accurate and under fault conditions, the meter will be damaged due to high voltage that it wasn’t designed to handle.</br>
+For good results, <strong>protection voltage transformer</strong> should be used only for protection purposes while  <strong>measurement voltage transformer</strong> should be used only for measurement purposes.</br>
+<strong>NB</strong></br>
+Most potential transformers for meduim voltages have double secondary windings, one for protection and the other for measurement. Thus, during installation, care should be taken to ensure that the terminals are respected to avoid damages on meters or relay unreliability.</br>
+</ol>
+<div style="text-align:center">
+	<spam style="color:blue"><strong>Sizing of voltage transformers for energy meters</strong>
+	</spam>
+</div></br>
+<spam style="color:blue">
+<strong>Criteria for the selection of voltage transformers for measurement</strong>
+</spam></br>
+In the selection of measurement VTs, the following criteria should be respected;</br>
+<ol>
+<li>Determine the load line voltage of the system and then use it to determins the primary voltage of the VT. The load voltage must be greater than 110V between phases.</li>
+<li>The primary nominal rating of the VT should be the closest value to 125% of the nominal voltage of the load. This is to enable the voltage transformer measure a voltage range of 5% to 120% of load nominal voltage.</li>
+<li>The burden VA and accuracy class of the VT should be the closest value to 120% of the burden of the total load. An error burden of &lt<10VA per phase at Un (burden of the energy meter) must be added to the overall burden of the load before selection of VTs.</li>
+<li> The type of connection to be applied (star or delta).</li>
+<li> Where the VTs are to be installed(outdoor or indoor).</li>
+<li>The operating frequency of the system. The operating frequency of the VT should be same at that of the system.</li>
+</ol>
+Let's select VTs for our previous example under <strong>current transformer selections</strong>:</br>
+Since three phase energy meters operates on low voltages of up to 480V, we could just connect our energy meter directly to the generator's current carrying conductors and then use a surge protector, and fuses or a circuit breaker for its protection. On the contrary, we can still use LV measurement voltage metransformer and a circuit breaker for our meter.</br>
+</p>
+</article>
+</main>
+<script src="main.js" differ></script>
+<!---My google translator code-->
+  <div id="google_translate_element"></div>
+	
+	<script type="text/javascript" >
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: 'en'},
+				'google_translate_element'
+			);
+		}
+	</script>
+	
+	<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit">
+	</script>
+	
+	<!--My main footer item-->
+	<footer>
+		<p>Don't judge each day by the harvest that you made, but by the seeds that you sold.</p>
+	</footer>
+</body>
+</html>
